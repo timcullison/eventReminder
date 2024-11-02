@@ -1,3 +1,4 @@
+-- Active: 1730160956391@@192.168.21.99@5432@event_reminder@public
 CREATE Table SystemUser
 (
     userId SERIAL PRIMARY KEY,
@@ -31,9 +32,9 @@ CREATE Table Task
     RecurYearly BOOLEAN
 )
 
-CREATE Table Wishlist
+CREATE Table WishlistItem
 (
-    wishlistID SERIAL PRIMARY KEY,
+    wishlistItemId SERIAL PRIMARY KEY,
     eventId INTEGER REFERENCES Event,
     name VARCHAR(50),
     description VARCHAR,
